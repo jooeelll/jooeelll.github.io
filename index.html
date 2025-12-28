@@ -1,106 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Joel Sudeep - Portfolio</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Poppins', sans-serif;
-      background: #f4f7fb;
-      color: #333;
-    }
-    header {
-      background: #007acc;
-      color: white;
-      padding: 40px 20px;
-      text-align: center;
-    }
-    header h1 {
-      margin: 0;
-      font-size: 2.5em;
-    }
-    nav {
-      margin-top: 15px;
-    }
-    nav a {
-      color: white;
-      margin: 0 15px;
-      text-decoration: none;
-      font-weight: 500;
-    }
-    nav a:hover {
-      text-decoration: underline;
-    }
-    section {
-      max-width: 900px;
-      margin: 50px auto;
-      padding: 20px;
-      background: white;
-      border-radius: 12px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    }
-    h2 {
-      color: #007acc;
-      margin-top: 0;
-    }
-    ul {
-      padding-left: 20px;
-    }
-    footer {
-      text-align: center;
-      padding: 20px;
-      background: #007acc;
-      color: white;
-      margin-top: 40px;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joel Sudeep | Portfolio</title>
+    <style>
+        /* This is the "Style" section - it makes the site look pretty */
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; display: flex; color: #333; }
+        
+        /* Side Navigation Bar */
+        nav { width: 250px; background: #2c3e50; height: 100vh; position: fixed; color: white; padding: 20px; }
+        nav h2 { font-size: 1.2rem; border-bottom: 1px solid #555; padding-bottom: 10px; }
+        nav a { display: block; color: #bdc3c7; text-decoration: none; margin: 15px 0; font-weight: bold; }
+        nav a:hover { color: white; }
+
+        /* Main Content Area */
+        main { margin-left: 290px; padding: 40px; max-width: 900px; }
+        
+        /* Project Cards */
+        .card { background: #f9f9f9; border: 1px solid #ddd; border-radius: 8px; padding: 20px; margin-bottom: 20px; transition: 0.3s; }
+        .card:hover { box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
+        .tag { background: #3498db; color: white; padding: 3px 8px; border-radius: 4px; font-size: 0.8rem; margin-right: 5px; }
+
+        img.profile-pic { width: 150px; border-radius: 50%; border: 5px solid #ecf0f1; }
+        h1 { color: #2c3e50; }
+    </style>
 </head>
 <body>
-  <header>
-    <h1>Joel Sudeep</h1>
-    <p>Computer Science Student | Developer | GDSC Lead</p>
+
     <nav>
-      <a href="#about">About</a>
-      <a href="#projects">Projects</a>
-      <a href="#skills">Skills</a>
-      <a href="#contact">Contact</a>
+        <img src="profile.jpg" alt="Joel Sudeep" class="profile-pic">
+        <h2>Joel Sudeep</h2>
+        <a href="#about">About Me</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
     </nav>
-  </header>
 
-  <section id="about">
-    <h2>About Me</h2>
-    <p>I am a Computer Science student at MAHE Dubai with experience in software development, event management, and leadership as the Google Developer Student Club Lead. Passionate about technology, problem-solving, and building meaningful projects.</p>
-  </section>
+    <main>
+        <section id="about">
+            <h1>Hi, I'm Joel! 👋</h1>
+            <p>I am a Software Engineering student passionate about <b>Cybersecurity, Networking, and AI-driven sustainability</b>.</p>
+            <p>Currently focusing on autonomous systems and secure infrastructure.</p>
+        </section>
 
-  <section id="projects">
-    <h2>Projects</h2>
-    <ul>
-      <li><b>Car Wash Booking App</b> – Flutter-based app for service bookings (In Progress)</li>
-      <li><b>Educational Toy Marketing Plan</b> – Supported children’s charities globally</li>
-      <li><b>Code to Cloud</b> – Organized and led workshops under GDSC</li>
-    </ul>
-  </section>
+        <hr>
 
-  <section id="skills">
-    <h2>Skills</h2>
-    <p>Full-Stack Development, SQL, Flutter, Cybersecurity, Algorithms, Marketing, Event Management</p>
-  </section>
+        <section id="projects">
+            <h2>Featured Projects</h2>
 
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>
-      📧 <a href="mailto:joelsudeep@email.com">joelsudeep@email.com</a><br>
-      💼 <a href="https://linkedin.com/in/joelsudeep">LinkedIn</a><br>
-      📂 <a href="https://github.com/jooeelll">GitHub</a>
-    </p>
-  </section>
+            <div class="card">
+                <h3>Autonomous Desert Reforestation Bot</h3>
+                <span class="tag">AI</span> <span class="tag">Robotics</span> <span class="tag">Sustainability</span>
+                <p>Developing a research paper and prototype for a robot designed to automate tree planting in arid climates to fight desertification.</p>
+            </div>
 
-  <footer>
-    <p>© 2025 Joel Sudeep</p>
-  </footer>
+            <div class="card">
+                <h3>GridVision - Sustainable Power System</h3>
+                <span class="tag">Management</span> <span class="tag">Engineering</span>
+                <p>Designed a sustainable power grid for a fictional city, balancing cost-efficiency with renewable energy sources.</p>
+            </div>
+
+            <div class="card">
+                <h3>Cisco Network Infrastructure</h3>
+                <span class="tag">Cisco IOS</span> <span class="tag">VLAN</span>
+                <p>Configured complex network topologies including VLANs, routing protocols, and security services using Packet Tracer.</p>
+            </div>
+        </section>
+
+        <section id="skills">
+            <h2>Technical Skills</h2>
+            <ul>
+                <li><b>Operating Systems:</b> Process Scheduling, Kernel Architecture</li>
+                <li><b>Networking:</b> Cisco IOS, Routing & Switching</li>
+                <li><b>Security:</b> Cryptography, CTF Challenges</li>
+                <li><b>Engineering:</b> UML Design, SDLC Models</li>
+            </ul>
+        </section>
+
+        <section id="contact">
+            <h2>Get In Touch</h2>
+            <p>Email: <a href="mailto:your-email@example.com">your-email@example.com</a></p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/joel-sudeep-b46a39200/">Visit My Profile</a></p>
+        </section>
+    </main>
+
 </body>
 </html>
-
